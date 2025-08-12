@@ -6,7 +6,7 @@ const lrn = urlParams.get("lrn");
 document.getElementById("lrn-display").textContent = `LRN: ${lrn}`;
 
 // Google Apps Script Web App URL (Deployed as "Anyone with the link" access)
-const scriptURL = "https://script.google.com/macros/s/AKfycbzGx5rIgY9y-If49E8lO_d-m7tXI4t3Sq51JmcF11rAPlYxs6ik1YXP0hiBE-AnJYiPjw/exec"; // <-- Replace with your deployed web app URL
+const scriptURL = "https://script.google.com/a/macros/deped.gov.ph/s/AKfycbyhaKd9RD3hQMPTOfJZy5sRBYKvNsfnjrIEMBC18rk_QLQfNPmhtUdKIPx5n2M-qAkzSw/exec"; // <-- Replace with your deployed web app URL
 
 // Fetch learner data from Google Sheets
 function fetchLearnerData(lrn) {
@@ -39,3 +39,4 @@ if (lrn) {
 } else {
     document.getElementById("learner-data").innerHTML = "<p>No LRN provided</p>";
 }
+
