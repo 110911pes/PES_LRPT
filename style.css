@@ -1,0 +1,173 @@
+/* Reset + Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #e0e5ec;
+}
+
+.page-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Login Card */
+.login-card {
+  flex: 1;
+  max-width: 380px;
+  background: #e0e5ec;
+  padding: 2rem;
+  border-radius: 20px;
+  margin: auto 2%;
+  box-shadow: 8px 8px 15px #a3b1c6, -8px -8px 15px #ffffff;
+  text-align: center;
+}
+
+.school-logo {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tab-buttons button {
+  flex: 1;
+  padding: 0.6rem;
+  background: #e0e5ec;
+  border: none;
+  border-radius: 12px;
+  box-shadow: inset 3px 3px 6px #a3b1c6, inset -3px -3px 6px #ffffff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.tab-buttons button.active {
+  background: linear-gradient(145deg, #d1d9e6, #ffffff);
+  box-shadow: 3px 3px 6px #a3b1c6, -3px -3px 6px #ffffff;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  border: none;
+  border-radius: 12px;
+  box-shadow: inset 3px 3px 6px #a3b1c6, inset -3px -3px 6px #ffffff;
+  font-size: 0.9rem;
+}
+
+#error-message {
+  font-size: 0.85rem;
+  color: red;
+  margin-bottom: 0.5rem;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(145deg, #4facfe, #00f2fe);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  box-shadow: 3px 3px 6px #a3b1c6, -3px -3px 6px #ffffff;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: linear-gradient(145deg, #00f2fe, #4facfe);
+}
+
+.extra-buttons {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.extra-buttons button {
+  padding: 0.6rem;
+  background: #e0e5ec;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 3px 3px 6px #a3b1c6, -3px -3px 6px #ffffff;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: #777;
+}
+
+/* Image Grid */
+.image-grid {
+  flex: 1;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  align-items: stretch; /* ensures equal height cells */
+}
+
+.image-grid img {
+  width: 100%;
+  height: 220px; /* fixed height for uniform look */
+  border-radius: 20px;
+  box-shadow: 8px 8px 15px #a3b1c6, -8px -8px 15px #ffffff;
+  object-fit: cover; /* fills without distortion */
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeZoom 1s forwards;
+}
+
+.image-grid img:nth-child(1) { animation-delay: 0.2s; }
+.image-grid img:nth-child(2) { animation-delay: 0.4s; }
+.image-grid img:nth-child(3) { animation-delay: 0.6s; }
+.image-grid img:nth-child(4) { animation-delay: 0.8s; }
+.image-grid img:nth-child(5) { animation-delay: 1.0s; }
+.image-grid img:nth-child(6) { animation-delay: 1.2s; }
+.image-grid img:nth-child(7) { animation-delay: 1.4s; }
+.image-grid img:nth-child(8) { animation-delay: 1.6s; }
+
+@keyframes fadeZoom {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-container {
+    flex-direction: column;
+  }
+  .login-card {
+    margin: 2rem auto;
+  }
+  .image-grid img {
+    height: 180px;
+  }
+}
