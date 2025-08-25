@@ -62,16 +62,18 @@ button:hover {
   position: relative;
   overflow: hidden;
 }
-.collage-img {
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
-  border-radius: 8px;
-  position: absolute;
-  animation: floatAnim 8s ease-in-out infinite;
-  opacity: 0.8;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+.collage {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 400px;
+  height: 250px; /* increase height */
+  position: relative;
+  overflow: hidden;
 }
+
 .img1 { top: 10px; left: 20px; animation-delay: 0s; }
 .img2 { top: 30px; left: 80px; animation-delay: 1s; }
 .img3 { top: 50px; left: 140px; animation-delay: 2s; }
@@ -197,3 +199,4 @@ button:hover {
   max-width: 400px;  /* optional: keeps text neat if long */
   line-height: 1.4;
 }
+
