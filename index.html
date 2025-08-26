@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panitian Elementary School Reading Progress Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    
+    <header class="header">
+  <img src="pes-logo.png" alt="School Logo" class="school-logo"/>
+  <h1>PANITIAN ELEMENTARY SCHOOL</h1>
+  <p class="subtitle">
+    READING PROGRESS TRACKER on the Implementation of ARAL-Reading Program
+  </p>
+</header>
+
+
+    <form id="loginForm" class="login-form">
+      <input type="text" id="username" placeholder="Learner Reference Number" required />
+      <button type="submit">Login</button>
+    </form>
+    <p class="subtitle">Type your LRN and Click Login button</p>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 Panitian Elementary School | Toy Lalong-isip</p>
+  </div>
+
+  <div id="result"></div>
+
+  <!-- Loader -->
+  <div id="loader" class="loader-overlay">
+    <div class="loader"></div>
+    <p>Fetching data, please wait...</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
