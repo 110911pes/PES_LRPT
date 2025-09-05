@@ -21,6 +21,78 @@
     <button id="logoutBtn">Logout</button>
   </main>
 
+  <!-- 📘 Reading Proficiency Levels -->
+  <section class="proficiency-section">
+    <h2>Mga Antas ng Pagbasa</h2>
+    <div class="proficiency-container">
+      <!-- Key Stage 1 -->
+      <div class="proficiency-column">
+        <h3>Key Stage 1 (Grade 1–3)</h3>
+        <ul>
+          <li><strong>Low Emerging Reader:</strong> nakakakilala lang ng ilang letra (0–6 letra), may katamtaman hanggang mababang phonological awareness sa pamamagitan ng rhyming tasks. Hirap pa ring bumasa ng simpleng salita.</li>
+          <li><strong>High Emerging Reader:</strong> nakakakilala na ng 80% o higit pang mga letra, maayos ang phonological awareness, kaya nang i-decode ang mga salita mula sa nakaraang baitang. Ngunit kulang pa ang fluency at pag-unawa ng nilalaman ng binasa.</li>
+          <li><strong>Developing Reader:</strong> kaya nang i-decode ang mga salita mula sa nakaraang at kasalukuyang baitang ngunit kailangan pa ng maraming paggabay upang paunlarin ang fluency at comprehension.</li>
+          <li><strong>Transitioning Reader:</strong> may mahusay nang letter knowledge at phonics; kaya nang magbasa ng salita, parirala, pangungusap at maikling talata na may kaukulang katumpakan; kailangan pa ng paghasa sa fluency at pag-unawa.</li>
+          <li><strong>Reader at Grade Level:</strong> may mataas na antas ng decoding skills, fluency, at comprehension; handa nang bumasa sa iba't ibang uri ng teksto at mag-shift mula sa L1 tungo sa L2 o L3 (halimbawa mula sa Filipino patungong English).</li>
+        </ul>
+      </div>
+
+      <!-- Key Stage 2 -->
+      <div class="proficiency-column">
+        <h3>Key Stage 2 (Grade 4–6)</h3>
+        <ul>
+          <li><strong>Independent (Malaya):</strong> nagbabasa nang maayos, madali, gamit ang tono at ekspresyon; madali at mataas ang pagkaunawa.</li>
+          <li><strong>Instructional (Gabay ng Guro):</strong> kayang maunawaan ang teksto gamit ang kaunting tulong; hindi pa ganap ang kasanayan.</li>
+          <li><strong>Frustration (Mahirap para sa Mag-aaral):</strong> maraming hindi kilalang salita, magaspang ang pagbabasa, maraming pag-aalinlangan; mababa ang pag-unawa.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <script src="script.js"></script>
+
+  <!-- 📌 CSS for layout -->
+  <style>
+    .proficiency-section {
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      margin: 20px;
+    }
+
+    .proficiency-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .proficiency-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .proficiency-column {
+      flex: 1 1 300px;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .proficiency-column h3 {
+      margin-bottom: 10px;
+      color: #2a4d8f;
+    }
+
+    .proficiency-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .proficiency-column li {
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+  </style>
 </body>
 </html>
